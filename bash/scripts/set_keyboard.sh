@@ -6,8 +6,9 @@ BUILTIN_KEYBOARD="AT Translated Set 2 keyboard"
 # List of candidate external keyboards
 EXTERNAL_KEYBOARDS=(
     "BY Tech Gaming KB"
-    "Compx 2.4G Wireless Receiver"
+    "Compx 2.4G Wireless Receiver Keyboard"
 )
+
 
 # Get ID of built-in keyboard
 BUILTIN_ID=$(xinput list | awk -v name="$BUILTIN_KEYBOARD" '$0 ~ name {for(i=1;i<=NF;i++) if($i ~ /id=/) {split($i, a, "="); print a[2]}}')
