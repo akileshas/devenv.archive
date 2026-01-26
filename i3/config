@@ -145,7 +145,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 bindsym $mod+q kill
 
 # Start a terminal emulator
-bindsym $mod+Return exec wezterm
+bindsym $mod+Return exec kitty
 
 # Change focus direction
 bindsym $mod+h focus left
