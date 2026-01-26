@@ -1,13 +1,7 @@
 #!/bin/bash
-# Display current GPU usage and memory usage for NVIDIA
+GPU_PATH="/sys/class/drm/card1/device"
 
-# Get GPU usage percentage
-gpu_usage=$(nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits)
+gpu_usage=$(cat "$GPU_PATH/gpu_busy_percent" 2>/dev/null || echo "N/A")
+used_gib=$(awk '{printf "%.1f", $1/1024/1024/1024}' "$GPU_PATH/mem_info_gtt_used")
 
-# Get total and used memory in MiB
-gpu_memory_info=$(nvidia-smi --query-gpu=memory.used,memory.total --format=csv,noheader,nounits)
-used_memory=$(echo $gpu_memory_info | cut -d ',' -f 1)
-total_memory=$(echo $gpu_memory_info | cut -d ',' -f 2)
-
-# Display GPU usage and memory usage
-echo "   ${gpu_usage}% - ${used_memory} MiB "
+echo "   ${gpu_usage}% - ${used_gib} GiB "

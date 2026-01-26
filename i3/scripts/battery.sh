@@ -2,8 +2,8 @@
 # Display battery percentage and charging status
 
 # Get battery percentage and status
-status=$(cat /sys/class/power_supply/BAT1/status)
-capacity=$(cat /sys/class/power_supply/BAT1/capacity)
+status=$(cat /sys/class/power_supply/BAT0/status)
+capacity=$(cat /sys/class/power_supply/BAT0/capacity)
 
 # Display percentage with charging status icon
 if [ "$status" = "Charging" ]; then

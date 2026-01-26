@@ -2,7 +2,7 @@ configuration {
     show-icons:         true;
     display-drun:       "";
     disable-history:    false;
-    terminal:           "kitty";
+    terminal:           "wezterm";
 }
 
 * {

@@ -100,7 +100,7 @@ __ping () {
 
 ## global variables
 HOST=$(hostnamectl hostname)
-FONTS_FILE_PATH="${HOME}/dev/env/.dotfiles/setup/sys/pkglist/fonts.pkgs"
+FONTS_FILE_PATH="${HOME}/dev/env/devenv.archive/setup/sys/pkglist/fonts.pkgs"
 BASE_PKGS_FILE_PATH="${HOME}/dev/env/.dotfiles/setup/sys/pkglist/base.pkgs"
 POST_PKGS_FILE_PATH="${HOME}/dev/env/.dotfiles/setup/sys/pkglist/post.pkgs"
 
