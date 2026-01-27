@@ -53,7 +53,7 @@ input {
     }
 
     trackpoint {
-        // off
+        off
         // natural-scroll
         // accel-speed 0.2
         // accel-profile "flat"
@@ -271,6 +271,7 @@ layout {
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "waybar"
+spawn-at-startup "swaybg -i ~/dev/env/devenv.archive/i3/wallpaper/hi.png"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
@@ -366,8 +367,9 @@ binds {
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return hotkey-overlay-title="Open a Terminal: wezterm" { spawn "wezterm"; }
     Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
-    Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
+    Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock -i ~/dev/env/devenv.archive/images/fuck-society-center.png"; }
     Super+Alt+Shift+L { spawn-sh "/home/akileshas/.config/niri/suspend.sh"; }
+    Mod+B { spawn "firefox-developer-edition"; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.
