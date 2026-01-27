@@ -1,0 +1,27 @@
+* {
+  font-family: JetBrains Mono, monospace;
+  font-size: 15px;
+}
+
+window#waybar {
+  background: rgb(0, 0, 0);
+  color: #EEEEEE;
+}
+
+#custom-time {
+  color: #FDD017;
+}
+
+#custom-network_speed,
+#custom-cpu,
+#custom-ram,
+#custom-gpu,
+#custom-fan_speed,
+#custom-volume,
+#custom-brightness,
+#custom-battery,
+#custom-date,
+#custom-time,
+#custom-notifications {
+  padding: 0 0;
+}

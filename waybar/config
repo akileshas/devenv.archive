@@ -1,0 +1,81 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 28,
+
+  "modules-left": [],
+  "modules-center": [],
+
+  "modules-right": [
+    "custom/network_speed",
+    "custom/cpu",
+    "custom/ram",
+    "custom/gpu",
+    "custom/fan_speed",
+    "custom/volume",
+    "custom/brightness",
+    "custom/battery",
+    "custom/date",
+    "custom/time",
+  ],
+
+  "custom/network_speed": {
+    "exec": "~/dev/env/devenv.archive/i3/scripts/network_speed.sh",
+    "interval": 1,
+    "format": "{}"
+  },
+
+  "custom/cpu": {
+    "exec": "~/dev/env/devenv.archive/i3/scripts/cpu.sh",
+    "interval": 1,
+    "format": "{}"
+  },
+
+  "custom/ram": {
+    "exec": "~/dev/env/devenv.archive/i3/scripts/memory.sh",
+    "interval": 1,
+    "format": "{}"
+  },
+
+  "custom/gpu": {
+    "exec": "~/dev/env/devenv.archive/i3/scripts/gpu.sh",
+    "interval": 1,
+    "format": "{}"
+  },
+
+  "custom/fan_speed": {
+    "exec": "~/dev/env/devenv.archive/i3/scripts/fan_speed.sh",
+    "interval": 1,
+    "format": "{}"
+  },
+
+  "custom/volume": {
+    "exec": "~/dev/env/devenv.archive/i3/scripts/volume.sh",
+    "interval": 1,
+    "format": "{}"
+  },
+
+  "custom/brightness": {
+    "exec": "~/dev/env/devenv.archive/i3/scripts/brightness.sh",
+    "interval": 1,
+    "format": "{}"
+  },
+
+  "custom/battery": {
+    "exec": "~/dev/env/devenv.archive/i3/scripts/battery.sh",
+    "interval": 1,
+    "format": "{}"
+  },
+
+  "custom/date": {
+    "exec": "~/dev/env/devenv.archive/i3/scripts/date.sh",
+    "interval": 1,
+    "format": "{}"
+  },
+
+  "custom/time": {
+    "exec": "~/dev/env/devenv.archive/i3/scripts/time.sh",
+    "interval": 1,
+    "format": "{}"
+  },
+}
