@@ -367,7 +367,7 @@ binds {
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return hotkey-overlay-title="Open a Terminal: wezterm" { spawn "wezterm"; }
     Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
-    Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock -i ~/dev/env/devenv.archive/images/fuck-society-center.png"; }
+    Super+Alt+L { spawn-sh "/home/akileshas/.config/niri/lock.sh"; }
     Super+Alt+Shift+L { spawn-sh "/home/akileshas/.config/niri/suspend.sh"; }
     Mod+B { spawn "firefox-developer-edition"; }
 
