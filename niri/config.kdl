@@ -63,15 +63,11 @@ screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 // screenshot-path null
 
 window-rule {
-
-}
-window-rule {
     match app-id="wezterm"
-    open-maximized true
     default-column-width {}
 }
 window-rule {
-    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+    match app-id=r#"firefox-developer-edition$"# title="^Picture-in-Picture$"
     open-floating true
 }
 
